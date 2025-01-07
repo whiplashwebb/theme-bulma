@@ -1,5 +1,7 @@
+// this forward may seem redundant, but it allows the defaulted variables to be used in the @use config
 @forward "abstracts";
 @use "abstracts" as a;
+
 @use "bulma/sass" with (
     $black: a.$black,
     $black-bis: a.$black-bis,
@@ -31,8 +33,21 @@
     $light: a.$light,
     $dark: a.$dark,
     $colors: a.$colors,
+    $size-1: a.$size-1,
+    $size-2: a.$size-2,
+    $size-3: a.$size-3,
+    $size-4: a.$size-4,
+    $size-5: a.$size-5,
+    $size-6: a.$size-6,
+    $size-7: a.$size-7,
+    $size-small: a.$size-small,
+    $size-normal: a.$size-normal,
+    $size-medium: a.$size-medium,
+    $size-large: a.$size-large,
+    $class-prefix: a.$class-prefix,
+    $cssvars-prefix: a.$cssvars-prefix,
+    $helpers-prefix: a.$helpers-prefix,
+    $helpers-has-prefix: a.$helpers-has-prefix,
 );
-//@forward "";
-@use "components" with (
-    $primary: a.$primary,
-);
+@forward "components";
+

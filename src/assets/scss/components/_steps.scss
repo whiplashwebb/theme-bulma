@@ -1,12 +1,13 @@
 @use "sass:list";
 
+@use "./../abstracts" as a;
 @use "utils/variables" as var;
 @use "bulma/sass/utilities/initial-variables" as vars;
 @use "bulma/sass/utilities/css-variables" as css;
 @use "bulma/sass/utilities/mixins" as mixins;
 
 /* @docs */
-$steps-colors: var.$colors !default;
+$steps-colors: a.$colors !default;
 $steps-mobile-breakpoint: vars.$tablet !default;
 $steps-marker-background: css.getVar("grey-light") !default;
 $steps-marker-color: css.getVar("scheme-main") !default;
@@ -24,7 +25,7 @@ $steps-vertical-padding: 1em 0 !default;
 .steps-wrapper {
     @include css.register-vars(
         (
-            "steps-size": #{var.$size-normal},
+            "steps-size": #{a.$size-normal},
             "steps-divider-height": #{$steps-divider-height},
             "steps-details-background-color": #{$steps-details-background-color},
         )

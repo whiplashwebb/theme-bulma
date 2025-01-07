@@ -1,13 +1,15 @@
 @use "sass:list";
 
+@use "./../abstracts" as a;
 @use "utils/functions" as fn;
 @use "utils/variables" as var;
+// this use might be generating duplicate code TODO : confirm or deny
 @use "bulma/sass/utilities/controls" as controls;
 @use "bulma/sass/utilities/css-variables" as css;
 
 /* @docs */
 $checkbox-size: 1.25em !default;
-$checkbox-colors: var.$colors !default;
+$checkbox-colors: a.$colors !default;
 $checkbox-background-color: transparent !default;
 $checkbox-border-color: css.getVar("grey") !default;
 $checkbox-border-radius: css.getVar("radius") !default;

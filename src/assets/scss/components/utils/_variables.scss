@@ -3,6 +3,8 @@
 *********************************************/
 @use "sass:map";
 
+@use "./../../abstracts" as a;
+
 $speed-slow: 150ms !default;
 $speed-slower: 250ms !default;
 
@@ -12,9 +14,11 @@ $secondary: #6c757d !default;
 // alternative to focus-shadow-size
 $active-shadow-size: 0 0 0.5em !default;
 
+// Colors have moved to abstracts TODO : remove after discussion
 // make the custom colors extandable by providing a new variable to override
-$custom-colors: () !default;
+//$custom-colors: () !default;
 
+// Removing this part for many reasons. Basically the whole build will explode if we do this with top-level configuration due to circular dependencies and/or namespace collision
 //@forward "bulma/sass/utilities/derived-variables" with (
 //    // adding aditional colors to colors map
 //    $custom-colors:
@@ -27,9 +31,9 @@ $custom-colors: () !default;
 //
 //@use "bulma/sass/utilities/derived-variables" as vars;
 //
-//$sizes-map: (
-//    "small": vars.$size-small,
-//    "normal": vars.$size-normal,
-//    "medium": vars.$size-medium,
-//    "large": vars.$size-large,
-//) !default;
+$sizes-map: (
+    "small": a.$size-small,
+    "normal": a.$size-normal,
+    "medium": a.$size-medium,
+    "large": a.$size-large,
+) !default;

@@ -1,8 +1,10 @@
 import type { OrugaOptions, ComponentProps } from "@oruga-ui/oruga-next";
 import { isTrueish } from "@oruga-ui/oruga-next";
 
+// disabling so styles are not automatically included. the user should be determining their approach to how to include styles in their own code.
+// TODO : remove after discussion
 // import theme style
-import "../assets/scss/bulma-build.scss";
+//import "../assets/scss/bulma-build.scss";
 
 const bulmaConfig: OrugaOptions = {
     field: {

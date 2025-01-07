@@ -1,0 +1,67 @@
+@use "utils";
+
+$black: hsl(221, 14%, 4%) !default;
+$black-bis: hsl(221, 14%, 9%) !default;
+$black-ter: hsl(221, 14%, 14%) !default;
+
+$grey-darker: hsl(221, 14%, 21%) !default;
+$grey-dark: hsl(221, 14%, 29%) !default;
+$grey: hsl(221, 14%, 48%) !default;
+$grey-light: hsl(221, 14%, 71%) !default;
+$grey-lighter: hsl(221, 14%, 86%) !default;
+$grey-lightest: hsl(221, 14%, 93%) !default;
+
+$white-ter: hsl(221, 14%, 96%) !default;
+$white-bis: hsl(221, 14%, 98%) !default;
+$white: hsl(221, 14%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(42, 100%, 53%) !default;
+$green: hsl(153, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(198, 100%, 70%) !default;
+$blue: hsl(233, 100%, 63%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 100%, 70%) !default;
+
+$text: $grey-dark !default;
+$link: $blue !default;
+
+$primary: $turquoise !default;
+$info: $cyan !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $white-ter !default;
+$dark: $grey-darker !default;
+
+$custom-colors: null !default;
+
+$colors: utils.mergeColorMaps(
+        (
+            "white": (
+                $white,
+                $black,
+            ),
+            "black": (
+                $black,
+                $white,
+            ),
+            "light": (
+                $light,
+                $dark,
+            ),
+            "dark": (
+                $dark,
+                $light,
+            ),
+            "text": $text,
+            "primary": $primary,
+            "link": $link,
+            "info": $info,
+            "success": $success,
+            "warning": $warning,
+            "danger": $danger,
+        ),
+        $custom-colors
+) !default;

@@ -1,3 +1,5 @@
+// This barrel should be the new entrypoint for users who want to load only component styles, replacing bulma.scss
+
 @forward "./utils";
 @forward "./autocomplete";
 @forward "./button";

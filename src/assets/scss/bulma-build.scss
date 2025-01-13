@@ -1,3 +1,7 @@
-@forward "components/utils/all";
-@forward "bulma/sass";
-@forward "bulma";
+// This file exists solely for backwards compatibility. this has long been the entry point for getting bulma and component styles at once, keeping this stub will make migration smoother. or maybe it's just confusing, IDK.
+@forward "theme-with-bulma";
+
+// Preserved for reference TODO : remove after discussion
+//@forward "components/utils/all";
+//@forward "bulma/sass";
+//@forward "bulma";

@@ -1,5 +1,6 @@
 @use "sass:list";
 
+@use "./../abstracts" as a;
 @use "utils/functions" as fn;
 @use "utils/variables" as var;
 @use "bulma/sass/utilities/css-variables" as css;
@@ -7,7 +8,7 @@
 @use "bulma/sass/utilities/mixins" as mixins;
 
 /* @docs */
-$switch-colors: var.$colors !default;
+$switch-colors: a.$colors !default;
 $switch-width: 2.75em !default;
 $switch-padding: 0.2em !default;
 $switch-background-color: css.getVar("grey-light") !default;

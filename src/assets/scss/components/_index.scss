@@ -1,0 +1,31 @@
+// This barrel should be the new entrypoint for users who want to load only component styles, replacing bulma.scss
+
+@forward "./utils";
+@forward "./autocomplete";
+@forward "./button";
+@forward "./carousel";
+@forward "./checkbox";
+@forward "./collapse";
+@forward "./datepicker";
+@forward "./dropdown";
+@forward "./field";
+@forward "./icon";
+@forward "./input";
+@forward "./loading";
+@forward "./modal";
+@forward "./menu";
+@forward "./notification";
+@forward "./pagination";
+@forward "./radio";
+@forward "./select";
+@forward "./sidebar";
+@forward "./skeleton";
+@forward "./slider";
+@forward "./steps";
+@forward "./switch";
+@forward "./table";
+@forward "./tabs";
+@forward "./taginput";
+@forward "./timepicker";
+@forward "./tooltip";
+@forward "./upload";

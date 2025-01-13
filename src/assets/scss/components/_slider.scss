@@ -1,10 +1,11 @@
 @use "sass:list";
 
+@use "./../abstracts" as a;
 @use "utils/variables" as var;
 @use "bulma/sass/utilities/css-variables" as css;
 
 /* @docs */
-$slider-colors: var.$colors !default;
+$slider-colors: a.$colors !default;
 $slider-radius: css.getVar("radius") !default;
 $slider-background: css.getVar("grey-lighter") !default;
 $slider-color: css.getVar("primary") !default;

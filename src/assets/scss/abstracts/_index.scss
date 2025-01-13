@@ -1,0 +1,6 @@
+// "Abstracts" is the layer of scss code which is completely independent of Bulma. It contains all the vars which need to be passed into bulma, along with any supporting mixins. If anything in this folder references bulma it will cause a circular dependency error as the bulma @use with configuration must come before any reference to the configured output of bulma.
+
+@forward "colors";
+@forward "typography";
+@forward "misc";
+@forward "utils";

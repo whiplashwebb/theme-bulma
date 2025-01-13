@@ -1,12 +1,13 @@
 @use "sass:list";
 @use "sass:color";
 
+@use "./../abstracts" as a;
 @use "utils/variables" as var;
 @use "bulma/sass/utilities/controls" as controls;
 @use "bulma/sass/utilities/css-variables" as css;
 
 /* @docs */
-$datepicker-colors: var.$colors !default;
+$datepicker-colors: a.$colors !default;
 $datepicker-header-color: css.getVar("grey") !default;
 $datepicker-today-border: solid 1px rgba(css.getVar("primary"), 0.5) !default;
 $datepicker-item-color: css.getVar("grey-dark") !default;

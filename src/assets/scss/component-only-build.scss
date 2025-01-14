@@ -1,0 +1,4 @@
+// This file is the scss entrypoint for users who want to include only theme styles
+
+@forward "theme-defaults";
+@forward "bulma";
